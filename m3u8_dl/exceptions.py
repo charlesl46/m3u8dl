@@ -1,0 +1,2 @@
+class FfmpegTooManyRequestsException(Exception):
+    pass
