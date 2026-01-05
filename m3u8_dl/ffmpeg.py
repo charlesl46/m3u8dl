@@ -129,6 +129,7 @@ def ffmpeg_multiple_download(m3u8_content : list,output : Path,working_dir : Pat
                 "file,crypto,data,http,https,tcp,tls",
                 "-re",
                 "-i", str(m3u8_part_file),
+                "-user_agent", random_user_agent(),
                 "-bsf:a", "aac_adtstoasc",
                 "-vcodec", "copy",
                 "-c", "copy",

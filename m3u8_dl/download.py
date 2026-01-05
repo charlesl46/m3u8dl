@@ -27,7 +27,7 @@ def download(args : Namespace):
     else:
         output_path = Path("output.mp4")
         working_dir = Path(".")
-
+        
     # dealing with input
     temp_m3u8_path = working_dir.joinpath("output_temp.m3u8")
     if is_url(url_or_filepath_or_query):
